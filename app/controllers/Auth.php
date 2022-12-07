@@ -12,10 +12,7 @@ class Auth extends Controller
 
     public function login()
     {
-        if (isset($_SESSION['login'])) {
-            header('Location: ' . BASEURL . '/');
-            die();
-        }
+        $this->sessionSet();
         $this->view('templates/header');
         $this->view('login/login');
         $this->view('templates/footer');
