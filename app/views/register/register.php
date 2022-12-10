@@ -1,7 +1,7 @@
 <h1 class="text-center my-5">Registrasi User</h1>
 
-<div class="text-center w-50 m-auto mt-5">
-    <form action="<?= BASEURL; ?>/Auth/registrasiUser" method="post">
+<div class="text-center w-25 m-auto mt-5">
+    <form action="<?= BASEURL; ?>/auth/registrasiUser" method="post">
 
         <div>
             <label for="username">Username : </label>

@@ -40,7 +40,7 @@ class Auth_model
         $password = password_hash($password, PASSWORD_DEFAULT);
         $password2 = password_hash($password2, PASSWORD_DEFAULT);
 
-        $query = "INSERT INTO " . $this->table . " VALUES ('',:username,:password)";
+        $query = "INSERT INTO " . $this->table . " (username,password) VALUES (:username,:password)";
 
         $this->db->query($query);
         $this->db->bind('username', $username);
@@ -74,7 +74,7 @@ class Auth_model
                 return $this->db->rowCount();
                 die();
             } else {
-                header('Location:' . BASEURL . '/Auth/login');
+                header('Location:' . BASEURL . '/auth/login');
             }
         }
     }

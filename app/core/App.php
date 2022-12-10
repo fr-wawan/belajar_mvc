@@ -31,6 +31,7 @@ class App
         //Params
         if (!empty($url)) {
             $this->params = array_values($url);
+
         }
 
         //Jalankan controller & method,serta kirimkan params

@@ -33,6 +33,7 @@ class Home extends Controller
     {
         $this->sessionNotSet();
         $data['user'] = $this->model('User_model')->getAllUserById($id);
+     
         $this->view('templates/header');
         $this->view('update/index', $data);
         $this->view('templates/footer');

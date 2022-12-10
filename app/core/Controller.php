@@ -25,7 +25,7 @@ class Controller
     public function sessionNotSet()
     {
         if (!isset($_SESSION['login'])) {
-            header('Location: ' . BASEURL . '/Auth/login');
+            header('Location: ' . BASEURL . '/auth/login');
             die();
         }
     }

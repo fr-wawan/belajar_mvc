@@ -1,6 +1,6 @@
 <?php
 session_start();
-class Auth extends Controller
+class auth extends Controller
 {
     public function index()
     {
@@ -21,7 +21,8 @@ class Auth extends Controller
     public function registrasiUser()
     {
         $this->model('Auth_model')->register($_POST);
-        header('Location: ' . BASEURL . '/Auth');
+        header('Location: ' . BASEURL . '/auth');
+        die();
     }
 
     public function loginUser()

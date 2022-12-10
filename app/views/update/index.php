@@ -1,5 +1,5 @@
 <div class="w-25 m-auto my-5">
-    <form action="<?= BASEURL; ?>/home/ubahUser" method="post">
+    <form action="<?= BASEURL; ?>/Home/ubahUser" method="post">
         <input type="hidden" name="id" value="<?= $data['user']['id'] ?>">
         <div>
             <label for="nama">Nama : </label>

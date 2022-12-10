@@ -18,10 +18,10 @@
         </div>
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active fs-5 mx-2" href="<?= BASEURL . '/Auth/logout' ?>" aria-current="page" href="#">Register</a>
+                <a class="nav-link active fs-5 mx-2" href="<?= BASEURL . '/auth' ?>" aria-current="page" href="#">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active fs-5 mx-2" href="<?= BASEURL . '/Auth/logout' ?>" aria-current="page" href="#">Logout</a>
+                <a class="nav-link active fs-5 mx-2" href="<?= BASEURL . '/auth/logout' ?>" aria-current="page" href="#">Logout</a>
             </li>
         </ul>
     </nav>

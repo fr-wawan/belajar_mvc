@@ -35,7 +35,7 @@ class User_model
         $password = htmlspecialchars($data['password']);
         $status = htmlspecialchars($data['status']);
 
-        $query = "INSERT INTO " . $this->table . " VALUES ('',:nama,:username,:email,:password,:status)";
+        $query = "INSERT INTO " . $this->table . " (nama,username,email,password,status) VALUES (:nama,:username,:email,:password,:status)";
         $this->db->query($query);
         $this->db->bind('nama', $nama);
         $this->db->bind('username', $username);

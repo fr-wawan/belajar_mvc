@@ -4,7 +4,7 @@
 <h1 class="text-center my-5">Login User</h1>
 
 <div class="container-fluid text-center w-25 m-auto mt-5">
-    <form action="<?= BASEURL; ?>/Auth/loginUser" method="post">
+    <form action="<?= BASEURL; ?>/auth/loginUser" method="post">
 
         <div>
             <label for="username">Username : </label>

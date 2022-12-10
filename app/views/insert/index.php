@@ -1,7 +1,7 @@
 <h1 class="text-center my-5">Tambah Data</h1>
 
 <div class="text-center w-25 m-auto mt-5">
-    <form action="<?= BASEURL; ?>/home/tambahUser" method="post">
+    <form action="<?= BASEURL; ?>/tambahUser" method="post">
         <div>
             <label for="nama">Nama : </label>
             <input type="text" name="nama" id="nama" class="form-control mb-3">
